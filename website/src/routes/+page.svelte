@@ -85,9 +85,9 @@
 </script>
 
 <SEO
-	title="Rugplay"
-	description="A realistic crypto trading simulator that lets you experience the risks and mechanics of decentralized exchanges without real financial consequences. Create coins, trade with liquidity pools, and learn about 'rug pulls' in a... relatively safe environment :)"
-	keywords="crypto simulation game, trading practice game, rug pull simulation, virtual cryptocurrency game"
+	title="WebBlock"
+	description="A crypto trading platform that lets you create coins, trade with liquidity pools and more"
+	keywords="cryptocurrency, blockchain, make your own coin"
 />
 
 <SignInConfirmDialog bind:open={shouldSignIn} />
