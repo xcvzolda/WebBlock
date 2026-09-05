@@ -56,11 +56,11 @@
 			'color: #4962ee; font-family: monospace; font-size: 12px; font-weight: bold; text-shadow: 2px 2px rgba(0,0,0,0.2);'
 		);
 		console.log(
-			'%c Welcome to Rugplay! DO NOT FUCKING PASTE ANYTHING IN THE CONSOLE UNLESS YOU KNOW WHAT YOU ARE DOING.',
+			'%c Welcome to WebBlock. Dont paste anything in the console unless you know what you are doing!',
 			'color: #4962ee; font-family: monospace; font-size: 12px; font-weight: bold; text-shadow: 2px 2px rgba(0,0,0,0.2);'
 		);
 		console.log(
-			'%c A product by Outpoot.com',
+			'%c A product by WebBlock',
 			'color: #4962ee; font-family: monospace; font-size: 12px; font-weight: bold; text-shadow: 2px 2px rgba(0,0,0,0.2);'
 		);
 
@@ -77,7 +77,7 @@
 	});
 
 	function getPageTitle(routeId: string | null): string {
-		if (!routeId) return 'Rugplay';
+		if (!routeId) return 'WebBlcok';
 
 		const titleMap: Record<string, string> = {
 			'/': 'Home',
@@ -87,17 +87,12 @@
 			'/coin/create': 'Create Coin',
 			'/settings': 'Settings',
 			'/admin': 'Admin',
-			'/admin/promo': 'Promo Codes',
-			'/admin/seasons': 'Season Settings',
 			'/transactions': 'Transactions',
-			'/hopium': 'Hopium',
-			'/arcade': 'Arcade',
 			'/live': 'Live Trades',
 			'/treemap': 'Treemap',
 			'/about': 'About',
 			'/legal/privacy': 'Privacy Policy',
 			'/legal/terms': 'Terms of Service',
-			'/shop': 'Shop',
 		};
 
 		// Handle dynamic routes
@@ -107,11 +102,8 @@
 		if (routeId.startsWith('/user/[username]')) {
 			return 'User Profile';
 		}
-		if (routeId.startsWith('/hopium/[id]')) {
-			return 'Prediction Question';
-		}
 
-		return titleMap[routeId] || 'Rugplay';
+		return titleMap[routeId] || 'WebBlock';
 	}
 
 </script>
